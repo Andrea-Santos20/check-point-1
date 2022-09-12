@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@300;400 & display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: #82c6eb;
+}
+
+.video {
+  height: 65vh;
+}
+
+.frame {
+  border-radius: 25px;
+}
+
+/* mobile */
+@media (max-width: 425px) {
+  header {
+    background-color: #145dc3;
+    height: 550px;
+    border: 3px solid rgb(133, 168, 223);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo > img {
+    width: 100%;
+    height: 90px;
+    margin-top: 15%;
+    border-radius: 25px;
+    position: relative;
+  }
+
+  .fonte{
+    font-size: 25px;  
+    font-style: italic;
+    font-family: 'Open-Sans', sans-serif;
+    text-align: center;
+    
+    color:rgb(50, 17, 180);
+    position: absolute;
+    margin: 5px;
+    margin-top: 80px;
+    padding: 3px;
+    
+  }
+
+  .ícones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    width: 100%;
+    height: 395px;
+    color: #ffff;
+  }
+
+  .navegacao {
+    color: aliceblue;
+    border-radius: 36px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #08199c;
+    width: 100%;
+    padding: 30px;
+    
+  }
+
+  .navegacao:hover {
+    background: #0077B5;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .curiosidade-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 75px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .curiosidade-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .card {
+    width: 350px;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    color: azure;
+    background: #08199c;
+    border-radius: 35px;
+    padding: 25px;
+  }
+
+  .card:hover {
+    background: #08199c;
+    border: 3px solid #c3c3cf;
+  }
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: center;
+  } 
+
+  p {
+    text-align: justify;
+    font: 16px;
+    margin: 50px;
+  }
+  
+  
+
+  .container-video {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  
+  .video {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+    padding: 70px;
+  }
+
+  .frame {
+    display: flex;
+    max-width: 20rem;
+  }
+
+  footer {
+    width: 430px;
+    height: 780px;
+    padding: 10px;
+    background-color: #145dc3;
+    border: 3px solid rgb(133, 168, 223);
+    color: #ffff;
+  }
+
+  .container-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .linkedin {
+    background-image: url("../img/linkedin.png");
+    width: 150px;
+    height: 150px;
+    background-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .github {
+    background-image: url("../img/github.png");
+    width: 150px;
+    height: 150px;
+    background-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link {
+    position: relative;
+    top: 70%;
+    text-decoration: none;
+    color: #ffff;
+  }
+
+  .link:hover {
+    background: #08199c;
+    border: 3px solid #5fcaca;
+  }
+
+  .git {
+    position: relative;
+    top: 70%;
+    text-decoration: none;
+    color: #ffff;
+  }
+
+  .git:hover {
+    background: #08199c;
+    border: 3px solid #5fcaca;
+  }
+}
+
+main {
+  width: 100%;
+  flex: auto;
+}
+
+/* desktop */
+@media (min-width: 1280px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    background: #145dc3;
+    font-size: 20px;
+  }
+
+  .logo {
+    display: flex;
+    margin: 35px 50px;
+    border-radius: 30px;
+    width: 50%;
+    height: 20%;
+    position: relative;
+  }
+
+  .fonte{
+    font-size: 40px;
+    font-style: italic;
+    color:beige;
+    position: absolute;
+    margin: 40px;
+    margin-left: 8px;
+    padding: 115px;
+    
+  }
+
+  .nav-container {
+    display: flex;
+    width: 60%;
+    color: #ffff;
+  }
+
+  .ícones {
+    display: flex;
+    gap: 30px;
+    width: 100%;    
+    margin: auto;
+    padding-right: 95px;
+  }
+
+  .navegacao {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffff;
+
+    width: 80%;
+    max-width: 190px;
+    height: 50px;
+    background: rgb(52, 173, 233);
+    border-radius: 25px;
+  }
+
+  .navegacao:hover {
+    background: #0077B5;
+  }
+
+  .banner {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 5%;
+    position: relative;
+  }
+
+  .banner > img {
+    width: 100%;
+    height: 620px;    
+  }
+
+  h1 {
+    margin: 150px 50px 50px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .curiosidade-cards {
+    display: flex;
+    justify-content: center;
+    margin: 30px;    
+    gap: 35px;
+  }
+
+  .card {
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    height: 80vh;
+    border-radius: 20px;
+    color: #ffff;
+    background: #08199c;
+  }
+
+  .card:hover {
+    background: #08199c;
+    border: 3px solid #e3e3e9;
+  }
+
+  h2 {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;    
+  }
+
+  p {      
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .video-descrição {
+    margin: 10px;
+  }
+
+  .video {
+    padding: 45px;
+    width: 100%;
+  }
+
+    footer {
+    width: 100%;
+    height: 380px;
+    background-color: #145dc3;
+  }
+
+  .container-footer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 120px;
+  }
+
+  .linkedin {
+    background-image: url("../img/linkedin.png");
+    width: 150px;
+    height: 150px;
+    background-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(6, 7, 11);
+  }
+
+  .github {
+    background-image: url("../img/github.png");
+    width: 150px;
+    height: 150px;
+    background-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }   
+
+  .link {
+    position: relative;
+    top: 70%;
+    text-decoration: none;
+    color: rgb(6, 7, 11);
+  }
+
+  .link:hover {
+    background: #e9eaf2;
+    border: 3px solid #1b8181;
+  }
+
+  .git {
+    position: relative;
+    top: 70%;
+    text-decoration: none;
+    color: rgb(6, 7, 11);
+  }
+
+  .git:hover {
+    background: #e9eaf2;
+    border: 3px solid #1b8181;
+  }
+}
